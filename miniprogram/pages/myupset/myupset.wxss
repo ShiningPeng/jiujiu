@@ -1,0 +1,74 @@
+/* miniprogram/pages/myupset/myupset.wxss */
+
+.container {
+  width: 100%;
+  background-color: white;
+
+}
+
+#avatar.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+  border: none;
+}
+
+.userinfo-nickname {
+  color: #f44;
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  /* text-align: center; */
+}
+
+.item {
+  width: 100%;
+  /* color: aqua; */
+  background: #fff;
+  margin-bottom: 30rpx;
+  z-index: 0;
+  /* height: 900rpx; */
+  /* border-bottom: 1px solid #f44; */
+  /* border: 1px solid #f44; */
+}
+
+.upset_title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  left: 40rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.upset_content {
+  display: block;
+  width: 100%;
+  /* height: 100rpx; */
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.upset_createtime {
+  /* text-align: right; */
+  display: inline-block;
+  /* height: 30rpx; */
+  /* vertical-align: middle; */
+  /* float: right; */
+  margin-left: 40rpx;
+}
+
+.imageDiv{
+  width: 100%;
+  height: 450rpx;
+  margin-bottom: 30rpx;
+  /* padding: 10rpx; */
+}
+.uploadImg{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}

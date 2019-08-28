@@ -1,0 +1,39 @@
+/* miniprogram/pages/personal/personal.wxss */
+page{
+  width:100%;
+  background-color: white;
+
+}
+/* .container{
+  width: 100%;
+  margin-bottom: 20px;
+} */
+.userinfo {
+  /* display: flex; */
+  width: 100%;
+}
+
+.btn{
+  margin:0 auto;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  /* margin: 20rpx; */
+  margin-left: 40rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-nickname {
+  color: #ff4444;
+  margin-left: 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+
+.custom-class{
+  font-size: 25rpx;
+}

@@ -1,0 +1,8 @@
+<!--miniprogram/pages/settings/settings.wxml-->
+<text>用vant中的switchCell组件和</text>
+
+<van-switch-cell
+  title="关于纠纠"
+  checked="{{ checked }}"
+  bind:change="onChange"
+/>

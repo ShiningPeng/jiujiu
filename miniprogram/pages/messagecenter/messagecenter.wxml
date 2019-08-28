@@ -1,0 +1,9 @@
+<!-- miniprogram/pages/messagecenter/messagecenter.wxml -->
+<van-tabs active="{{ active }}">
+  <van-tab title="评论">
+    <van-cell title="{{item.nickName}}评论了你的纠结" icon="user-o" is-link wx:for="{{users}}" wx:key="{{index}}" bindtap="navigateToComDetail" />
+  </van-tab>
+  <van-tab title="赞">
+    <van-cell title="{{item.nickName}}赞了你的评论" icon="user-o" wx:for="{{users}}" wx:key="{{index}}" bindtap="navigateToNotiDetail"   value="{{item.comment}}" label="{{item.createTime}}" />
+  </van-tab>
+</van-tabs>

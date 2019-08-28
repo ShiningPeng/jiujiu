@@ -1,0 +1,14 @@
+<!--miniprogram/pages/upset/upset.wxml-->
+
+<button class='button' type="primary"  bindtap="uploadUpset">发表</button>
+<input type="text" placeholder="请输入标题" focus="true" maxlength="20" class="input_title" bindinput='getUpsetTitle'  />
+<view class='textarea'>
+  <textarea   focus='true'  type='text'  placeholder='说说你的烦心事吧...' placeholder-style='width:100%;height:50%;' adjust-position="true" maxlength="1000" bindinput='getUpsetContent' ></textarea></view>
+  <view class='imgdiv'>
+    <image src='/images/upload.png' class='uploadImg' bindtap='uploadImg'></image>
+    <image class='uploadImg'  src='{{upset.imageUrl}}'></image>
+  </view>
+  <van-toast id="van-toast" />
+
+
+  

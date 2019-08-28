@@ -1,0 +1,32 @@
+<!--index.wxml-->
+
+<van-notice-bar left-icon="/images/high-volume.png" scrollable="false" text="release upset and be happy" />
+<swiper indicator-dots="true" autoplay="true" interval="4000" duration="1500" circular="true">
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class='items' wx:if="hasAllUpset">
+  <view class='item' wx:for="{{storeUpset}}" wx:key="index" bindtap='navigateToUpsetDetail' data-index="{{index}}">
+    <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{item.avaUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{item.niName}}</text>
+      <text class='upset_createtime'>{{item.createTime}}</text>
+    </view>
+    <text class='upset_title'>标题：{{item.upsetTitle}}</text>
+    <text class='upset_content'>内容：{{item.upsetContent}}</text>
+    <view class='imageDiv' wx:if="{{item.hasImg}}">
+      <image class='uploadImg' src='{{item.imageUrl}}'></image>
+    </view>
+    <!-- <van-icon name="comment-o" custom-style="margin-right:60rpx;float:right;bottom:20rpx;" />
+    <van-icon name="thumb-circle-o" info="{{count}}" color="{{color}}"  custom-style="margin-right:40rpx;float:right;bottom:20rpx;" /> -->
+  </view>
+</view>
+
+<view wx:else>
+  <text>还没有人发布纠结哦</text>
+</view>

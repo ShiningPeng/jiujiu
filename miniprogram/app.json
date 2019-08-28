@@ -1,0 +1,64 @@
+{
+  "pages": [
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/upset/upset",
+    "pages/mycomments/mycomments",
+    "pages/questionback/questionback",
+    "pages/myupset/myupset",
+    "pages/messagecenter/messagecenter",
+    "pages/commentdetail/commentdetail",
+    "pages/settings/settings",
+    "pages/upsetdetail/upsetdetail",
+    "pages/persondetail/persondetail"
+  ],
+  "window": {
+    "backgroundColor": "#FF4444",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff4444",
+    "navigationBarTitleText": "纠纠",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_hover.png"
+      },
+      {
+        "pagePath": "pages/myupset/myupset",
+        "text": "释放纠结",
+        "iconPath": "images/add.png",
+        "selectedIconPath": "/images/add_hover.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_hover.png"
+      }
+    ],
+    "selectedColor": "#3DC1D0"
+  },
+  "usingComponents": {
+    "van-nav-bar": "pages/dist/nav-bar/index",
+    "van-cell": "pages/dist/cell/index",
+    "van-cell-group": "pages/dist/cell-group/index",
+    "van-icon": "pages/dist/icon/index",
+    "van-tab": "pages/dist/tab/index",
+    "van-tabs": "pages/dist/tabs/index",
+    "van-notice-bar": "pages/dist/notice-bar/index",
+    "van-panel": "pages/dist/panel/index",
+    "van-button": "pages/dist/button/index",
+    "van-toast": "pages/dist/toast/index",
+    "van-picker": "pages/dist/picker/index",
+    "van-dialog": "./pages/dist/dialog/index",
+    "van-field": "./pages/dist/field/index",
+    "van-switch-cell": "pages/dist/switch-cell/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

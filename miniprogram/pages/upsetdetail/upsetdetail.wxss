@@ -1,0 +1,62 @@
+/* miniprogram/pages/upsetdetail/upsetdetail.wxss */
+page{
+  background-color: #fff;
+}
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-nickname {
+  color: aqua;
+  margin-left: 30rpx;
+  font-size: 15px;
+  text-align: center;
+}
+
+.upset_createtime {
+  display: inline-block;
+  margin-left: 40rpx;
+}
+.item {
+  width: 100%;
+  /* color: aqua; */
+  background: #fff;
+  margin-bottom: 20rpx;
+  height: 350rpx;
+  /* border: 1px solid #f44; */
+}
+/* .upset_title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  left: 40rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+} */
+
+.upset_content {
+  display: block;
+  width: 100%;
+  margin-left: 20rpx;
+  /* height: 100rpx; */
+  text-align: left;
+  /* overflow: hidden; */
+  margin-top: 20rpx; 
+  margin-bottom: 20rpx;
+}
+.imageDiv{
+  width: 100%;
+  height: 450rpx;
+  margin-bottom: 30rpx;
+  /* padding: 0 20rpx; */
+}
+.uploadImg{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}

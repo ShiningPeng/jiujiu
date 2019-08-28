@@ -1,0 +1,22 @@
+<!--miniprogram/pages/upsetdetail/upsetdetail.wxml-->
+
+<view class='item'>
+  <view class="userinfo" bindtap="navigateToPersonalDetail">
+    <image class="userinfo-avatar" id='avatar' src="{{oneUpset.avaUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{oneUpset.niName}}</text>
+    <text class='upset_createtime'>{{oneUpset.createTime}}</text>
+  </view>
+  <!-- <text class='upset_title'>标题：{{oneUpset.upsetTitle}}</text> -->
+  <text class='upset_content'>{{oneUpset.upsetContent}}</text>
+  <view class='imageDiv' wx:if="{{oneUpset.hasImg}}">
+    <image class='uploadImg' src='{{oneUpset.imageUrl}}'></image>
+  </view>
+  <view bindtap="clickZan">
+    <van-icon name="thumb-circle-o" color="{{color}}" info="{{count}}" custom-style="margin-right:40rpx;float:right;bottom:20rpx;" />
+  </view>
+  <view bindtap="startInput">
+    <van-icon name="comment-o" info="{{amount}}" custom-style="margin-right:60rpx;float:right;bottom:20rpx;" />
+    <input wx:if="{{write}}" focus="true" maxlength="20" bindinput="setComment"></input>
+  </view>
+
+</view>

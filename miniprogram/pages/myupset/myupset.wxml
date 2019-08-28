@@ -1,0 +1,20 @@
+<!--miniprogram/pages/myupset/myupset.wxml-->
+<view class='container' wx:if="{{hasUpset}}">
+  <view class='item' wx:for="{{storeUpset}}" wx:key="index" bindtap='navigateToUpsetDetail' data-index="{{index}}" >
+    <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" id='avatar' src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class='upset_createtime'>{{item.createTime}}</text>
+    </view>
+    <text class='upset_title'>标题：{{item.upsetTitle}}</text>
+    <text class='upset_content'>内容：{{item.upsetContent}}</text>
+    <view class='imageDiv' wx:if="{{item.hasImg}}">
+      <image class='uploadImg' src='{{item.imageUrl}}'></image>
+    </view>
+    <!-- <van-icon name="comment-o"  info="" custom-style="margin-right:60rpx;float:right;bottom:0;z-index:5;" />
+    <van-icon name="thumb-circle-o"  info="{{countArr[index]}}" color="{{color}}" custom-style="margin-right:40rpx;float:right;bottom:0;z-index:5;" /> -->
+  </view>
+</view>
+<view wx:if="{{!hasUpset}}">
+  <text>你还没有发布任何纠结哦</text>
+</view>

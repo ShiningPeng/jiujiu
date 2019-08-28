@@ -1,0 +1,79 @@
+<!--miniprogram/pages/persondetail/persondetail.wxml-->
+<view class='img'>
+  <view class='avatartext'>头像：</view>
+  <view class='userinfo_avatar'>
+<image src='{{userInfo.avatarUrl}}' ></image>
+  </view>
+</view>
+
+<view class='userinfo_nickname' bindtap='showNickNameModal'>昵称：{{userInfo.nickName}}</view>
+
+<view >
+  <picker bindchange="bindSexPickerChange" value="{{sIndex}}" range="{{sexArray}}" class="picker userinfo_sex">
+    <view >
+      性别：{{sexArray[sIndex]}}
+    </view>
+  </picker>
+</view>
+<view >
+  <picker bindchange="bindAgePickerChange" value="{{aIndex}}" range="{{ageArray}}" class="picker userinfo_age">
+    <view >
+      年龄： {{ageArray[aIndex]}}
+    </view>
+  </picker>
+</view>
+<view >
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="picker userinfo_place">
+    <view >
+      所在地：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+<view class=' userinfo_conorsch' bindtap='showConorschNameModal' >公司/学校：{{userInfo.conorsch}}</view>
+
+<van-dialog
+  use-slot
+  async-close
+  show="{{ newNickNameModal }}"
+  show-cancel-button
+  bind:cancel="colseNickNameDialog"
+  bind:confirm="colseNickNameDialog"
+  title="修改昵称"
+>
+  <view class="group-dialog-body">
+    <van-field
+      value=""
+      label="新昵称"
+      maxlength="{{20}}"
+      placeholder="起个名字吧"
+      bind:change="onNickNameChange"
+    >
+    </van-field>
+  </view>
+</van-dialog>
+
+<van-dialog
+  use-slot
+  async-close
+  show="{{ newConorschNameModal }}"
+  show-cancel-button
+  bind:cancel="colseConorschNameDialog"
+  bind:confirm="colseConorschNameDialog"
+  title="修改公司/学校"
+>
+  <view class="group-dialog-body">
+    <van-field
+      value="{{ userInfo.conorsch }}"
+      label="公司/学校"
+      maxlength="{{20}}"
+      placeholder="请输入公司名或学校名"
+      bind:change="onConorschNameChange"
+    >
+    </van-field>
+  </view>
+</van-dialog>
+
+
+
+
+

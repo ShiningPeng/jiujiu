@@ -1,0 +1,23 @@
+<!--miniprogram/pages/personal/personal.wxml-->
+     
+<!--   -->
+<view  >
+  
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo"  bindgetuserinfo="getUserInfo" class='btn'> 获取头像昵称 </button>
+    <block wx:else>
+    <view class="userinfo" bindtap='navigateToPersonalDetail'>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <!-- <van-icon name="arrow" custom-style="margin-left:260rpx;vertical-align:middle;" /> -->
+    </view>
+    </block>
+  </view>
+
+<van-cell-group class="custom-class">
+<van-cell title="发布纠结" icon="setting-o"  is-link link-type="navigateTo" url="../upset/upset" />
+  <van-cell  title="消息中心" icon="envelop-o"   is-link link-type="navigateTo" url="../messagecenter/messagecenter"/>
+  <van-cell title="我发布的评论" icon="comment-o" is-link link-type="navigateTo" url="../mycomments/mycomments" />
+  <van-cell title="问题反馈" icon="question-o" is-link link-type="navigateTo" url="../questionback/questionback" />
+  <van-cell title="设置" icon="setting-o" is-link  link-type="navigateTo" url="../settings/settings" />
+</van-cell-group>
+

@@ -1,0 +1,39 @@
+/* miniprogram/pages/persondetail/persondetail.wxss */
+page{
+  background-color: #fff;
+}
+
+.picker {
+  padding: 13px;
+  background-color: #fff;
+  /* margin-left: 10px; */
+  font-size: 13px;
+  color: #f44;
+}
+
+.img {
+  width: 400rpx;
+  /* display: flex; */
+}
+
+.avatartext {
+  color: #f44;
+  z-index: 3;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  font-size: 13px;
+}
+
+.userinfo_avatar {
+  width: 100%;
+  margin-left: 20rpx;
+  display: inline-block;
+}
+
+.userinfo_nickname, .userinfo_conorsch {
+  padding: 13px;
+  background-color: #fff;
+  /* margin-left: 10px; */
+  font-size: 13px;
+  color: #f44;
+}

@@ -1,0 +1,4 @@
+<!--miniprogram/pages/suggestfeedback/suggestfeedback.wxml-->
+<textarea placeholder='请将您遇到的问题提交给我，我将尽快处理' focus='true'  bindinput='getQuestionContent'></textarea>
+<button type="primary" bindtap='submit'>提交</button>
+  <van-toast id="van-toast" />

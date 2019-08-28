@@ -1,0 +1,87 @@
+/**index.wxss**/
+
+/**index.wxss**/
+
+page {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+
+.items {
+  width: 100%;
+  background-color: white;
+}
+
+.userinfo-avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 20rpx;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: white;
+}
+
+.userinfo-nickname {
+  color: aqua;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.item {
+  width: 100%;
+  /* color: aqua; */
+  background: #fff;
+  margin-bottom: 30rpx;
+  /* height: 900rpx; */
+  /* border-bottom: 1px solid #f44; */
+  /* border: 1px solid #f44; */
+}
+
+.upset_title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  left: 40rpx;
+  height: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.upset_content {
+  display: block;
+  width: 100%;
+  /* height: 100rpx; */
+  text-align: left;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+}
+
+.upset_createtime {
+  /* text-align: right; */
+  display: inline-block;
+  /* float: right; */
+  margin-left: 40rpx;
+  /* height: 30rpx; */
+}
+
+
+.slide-image {
+  width: 100%;
+  height: 500rpx;
+}
+
+.imageDiv{
+  width: 100%;
+  height: 450rpx;
+  margin-bottom: 30rpx;
+  /* padding: 0 20rpx; */
+}
+.uploadImg{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
