@@ -45,6 +45,7 @@
     "selectedColor": "#3DC1D0"
   },
   "usingComponents": {
+    "iconfont": "./iconfont/iconfont",
     "van-nav-bar": "pages/dist/nav-bar/index",
     "van-cell": "pages/dist/cell/index",
     "van-cell-group": "pages/dist/cell-group/index",

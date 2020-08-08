@@ -35,5 +35,18 @@ page{
 }
 
 .custom-class{
-  font-size: 25rpx;
+  /* font-size: 25rpx; */
+  flex: 1;
+  padding-left: 0;
+}
+.van-cell {
+  padding-left: 10px !important;
+}
+.personal-item {
+  /* line-height: 44px; */
+  height: 44px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

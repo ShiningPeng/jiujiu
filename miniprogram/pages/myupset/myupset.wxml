@@ -11,8 +11,6 @@
     <view class='imageDiv' wx:if="{{item.hasImg}}">
       <image class='uploadImg' src='{{item.imageUrl}}'></image>
     </view>
-    <!-- <van-icon name="comment-o"  info="" custom-style="margin-right:60rpx;float:right;bottom:0;z-index:5;" />
-    <van-icon name="thumb-circle-o"  info="{{countArr[index]}}" color="{{color}}" custom-style="margin-right:40rpx;float:right;bottom:0;z-index:5;" /> -->
   </view>
 </view>
 <view wx:if="{{!hasUpset}}">
